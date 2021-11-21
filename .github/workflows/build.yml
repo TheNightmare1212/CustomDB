@@ -19,7 +19,7 @@ jobs:
 
       # create dacpac using MSBUILD executable
       - name: create dacpac
-        run: msbuild CustomBD.sqlproj /p:Configuration=Release
+        run: msbuild CustomBD/CustomBD.sqlproj /p:Configuration=Release
       # Publish an artifact
       - uses: actions/upload-artifact@v2
         with:
